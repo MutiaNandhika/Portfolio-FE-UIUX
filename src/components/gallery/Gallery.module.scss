@@ -1,14 +1,16 @@
 .masonryGrid {
-    display: flex;
-    margin-left: calc(-1 * var(--static-space-16));
-    width: 100%;
+  display: flex;
+  margin-left: -16px;
+  width: auto;
 }
-
 .masonryGridColumn {
-    padding-left: var(--static-space-16);
-    background-clip: padding-box;
+  padding-left: 16px;
+  background-clip: padding-box;
 }
-
 .gridItem {
-    margin-bottom: var(--static-space-16);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+.gridItem:hover {
+  transform: scale(1.02);
 }

@@ -1,0 +1,75 @@
+---
+title: "PIXORA — Web-Based Image Processing Editor"
+description: "Aplikasi pengolahan citra digital berbasis Streamlit dengan fitur interaktif dan real-time transformasi gambar."
+image: /images/projects/pixora/cover.png
+slug: pixora-image-editor
+tags: ["Python", "Streamlit", "OpenCV", "Image Processing", "Citra Digital"]
+---
+
+## Tentang Proyek
+
+**PIXORA** adalah aplikasi pengolahan citra digital berbasis web yang dikembangkan menggunakan Python dan Streamlit. Aplikasi ini memudahkan pengguna—khususnya mahasiswa atau pemula dalam bidang pengolahan citra—untuk menerapkan berbagai transformasi gambar secara langsung dan interaktif melalui antarmuka yang sederhana.
+
+📍 Proyek ini dibuat sebagai tugas besar mata kuliah **Pengolahan Citra Digital**  
+🎓 Fakultas Teknik – Informatika – Universitas Jenderal Soedirman  
+📅 Tahun: 2025
+
+## Fitur Aplikasi
+
+### 🧩 Editor Interaktif
+- **Basic Filters**: Negative, Thresholding, Flip, Rotate
+- **Transformasi Ukuran**: Zoom In, Shrink
+- **Transformasi Warna**: Brightness, Contrast, Saturation
+- **Transformasi Spasial**: Sharpen, Reduce Noise, Translate
+- **Blending Gambar**: Gabungkan dua gambar dengan tingkat transparansi
+
+### 🧠 Navigasi Aplikasi
+- **Home**: Deskripsi umum dan petunjuk penggunaan
+- **Effect**: Halaman utama untuk mencoba filter
+- **About**: Profil tim dan teknologi
+
+## Teknologi yang Digunakan
+
+- **Bahasa**: Python
+- **Framework**: Streamlit
+- **Library**:
+  - OpenCV (cv2): untuk proses filter dan transformasi
+  - NumPy: manipulasi numerik gambar
+  - Pillow (PIL): konversi dan format file gambar
+
+## Struktur Proyek
+
+- `app.py` — Streamlit page utama
+- `utils/filters.py` — Kumpulan fungsi filter dan transformasi
+- `assets/logo.png` — Logo aplikasi
+
+## Alur Proses Gambar
+
+1. Upload gambar → dikonversi dari PIL ke array NumPy  
+2. Terapkan filter dari `filters.py`  
+3. Gambar hasil ditampilkan kembali ke pengguna dalam format PIL  
+
+## Kontribusi Saya
+
+🛠 Mutia Nandhika —  
+- Membuat fungsi UI dan efek citra di halaman Streamlit  
+- Menyusun logika transformasi warna dan spasial  
+- Kolaborasi implementasi blending, sharpen, log transform  
+
+## Tangkapan Layar
+
+![Tampilan Editor PIXORA](/images/projects/pixora/editor.png)
+*Editor interaktif dengan efek real-time*
+
+![Halaman About](/images/projects/pixora/about.png)
+*Deskripsi tim dan teknologi*
+
+## Dampak dan Hasil
+
+✅ Visualisasi transformasi citra secara langsung  
+✅ Interface minimalis tanpa instalasi tambahan  
+✅ Meningkatkan pemahaman konsep PCD lewat praktik
+
+---
+
+🔗 **GitHub Repo**: [MutiaNandhika/ProjekPCD](https://github.com/MutiaNandhika/ProjekPCD)

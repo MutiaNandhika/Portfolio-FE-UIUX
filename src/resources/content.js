@@ -1,51 +1,44 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Mutia",
+  lastName: "Nandhika",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Front-End Developer & UI Designer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "mutianandhika@gmail.com",
+  location: "Asia/Jakarta",
+  languages: ["Indonesia"],
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I write about front-end development, UI/UX design, and my experience in building impactful
+      web and mobile projects.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/mutia-nandhika/",
   },
   {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+  },
+  {
+    name: "Github",
+    icon: "github",
+    link: "https://github.com/MutiaNandhika",
   },
 ];
 
@@ -55,16 +48,17 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Crafting user-friendly experiences with code and creativity</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">SosmedCare</strong></>,
+    href: "https://github.com/MutiaNandhika/Sispak-KecanduanMedsos-BC",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Mutia, an informatics student passionate about building intuitive digital experiences.
+      <br /> Currently focusing on front-end development and UI/UX design using Figma, HTML, CSS,
+      and JavaScript.
     </>
   ),
 };
@@ -82,187 +76,144 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Mutia is a Purwokerto-based front-end developer and UI designer. Her experience includes
+        building responsive web and mobile applications, leading organizational teams, and
+        contributing to research-based design projects. With strong visual communication and
+        analytical skills, she aims to deliver meaningful digital solutions.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "PT Kilang Pertamina Internasional",
+        timeframe: "Jul – Aug 2024",
+        role: "UI/UX Intern",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Designed the UI/UX for a web-based inventory management system using Figma.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Dinkominfo Kabupaten Banyumas",
+        timeframe: "Dec 2020 – Mar 2021",
+        role: "Intern",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Developed UI/UX for Flutix mobile app and a SIAKAD website using CodeIgniter 3.</>,
         ],
         images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Universitas Jenderal Soedirman",
+        description: <>Studying Informatics with GPA 3.93/4.0</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "SMK Telkom Purwokerto",
+        description: <>Studied Software Engineering with final score 90.79/100</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        description: <>Experienced in designing web and mobile UI/UX prototypes.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Laravel",
+        description: <>Built dynamic websites and systems using Laravel + MySQL + Blade.</>,
+        images: [],
+      },
+      {
+        title: "Flutter",
+        description: <>Developed mobile apps for event registration and selection.</>,
+        images: [],
+      },
+      {
+        title: "JavaScript & HTML/CSS",
+        description: <>Core stack for interactive, responsive web development.</>,
+        images: [],
       },
     ],
   },
 };
 
 const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  path: "/uiux",
+  label: "UIUX",
+  title: `Projects – ${person.name}`,
+  description: `Development and UI/UX projects by ${person.name}`,
 };
 
 const work = {
-  path: "/work",
-  label: "Work",
+  path: "/frontend",
+  label: "FrontEnd",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `Development and UI/UX projects by ${person.name}`,
 };
 
 const gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  description: `Snapshots of inspiration and personal moments.`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/gallery/1.jpg",
+      alt: "Nama Sertifikat: Complete UI Designer: Visual Design, Prototype, Usability Test – BuildWithAngga (14 September 2024)",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/2.jpg",
+      alt: "Nama Sertifikat: Intro to Software Engineering – RevoU (19 Januari 2024)",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      src: "/images/gallery/3.jpg",
+      alt: "Nama Sertifikat: Sertifikat Kompetensi Rekayasa Perangkat Lunak (Software Engineering), KKNI Level II – BNSP – LSP SMK Telkom Sandhy Putra Purwokerto (30 Mei 2022)",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      src: "/images/gallery/4.jpg",
+      alt: "Nama Sertifikat: Menteri Riset dan Data – BEM Unsoed 2024",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/5.jpg",
+      alt: "Nama Sertifikat: Desain Terbaik – Praktikum Pemrograman Web – Laboratorium Informatika Universitas Jenderal Soedirman",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "/images/gallery/6.jpg",
+      alt: "Nama Sertifikat: Bendahara Kementerian Riset dan Data – Nilai Rata-rata 80 – BEM Unsoed",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      src: "/images/gallery/7.jpg",
+      alt: "Surat Keterangan Magang – PT Kilang Pertamina Internasional, Refinery Unit IV Cilacap. Judul: Rancang Bangun UI/UX Aplikasi Manajemen Inventaris Berbasis Website dengan Penerapan Design Thinking",
       orientation: "vertical",
     },
   ],
 };
+
 
 export { person, social, newsletter, home, about, blog, work, gallery };

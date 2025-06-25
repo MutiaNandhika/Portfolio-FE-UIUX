@@ -1,78 +1,91 @@
 ---
-title: "Create,edit and delete projects"
-summary: "Create, edit and delete projects in the work section of your Magic Portfolio."
-publishedAt: "2025-04-19"
-tag: "Magic Portfolio"
+title: "UI/UX Portfolio – Mutia Nandhika"
+summary: "A showcase of UI/UX projects by Mutia Nandhika, Informatics student passionate in product and interface design."
+publishedAt: "2025-06-24"
+tag: "UIUX"
 ---
 
-## Manage projects
+## 👩🏻‍💻 About Me
 
-You can create, edit and delete projects by adding, modifying or removing `*.mdx` files in the `src/app/work/projects` directory.
+Hello! I'm **Mutia Nandhika**, an Informatics student at Universitas Jenderal Soedirman with a deep interest in **UI/UX design** and **data visualization**. I’m experienced in using tools like **Figma**, **Canva**, and also have some development background in **CodeIgniter** and **WordPress**.
 
-## Frontmatter
+---
 
-The frontmatter is used to set the project's metadata: title, description, image, and tags. It's used in the project's page and in meta- and open graph tags.
+## 🎨 Selected UI/UX Projects
 
-<CodeBlock
-    marginBottom="16"
-    codes={[
-      {
-        code:
-`---
-title: "Developing a design system for indie creators"
-publishedAt: "2025-03-17"
-summary: "Once UI is a design system that empowers indie creators, small teams, and startups to build web applications."
-images:
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/image-03.jpg"
-team:
-  - name: "Lorant One"
-    role: "Software Engineer"
-    avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-link: "https://once-ui.com/"
----`,
-        language: "tsx",
-        label: "src/app/work/projects/project-1.mdx"
-      }
-    ]}
-/>
+### 1. Go Liboor – Mobile Travel Discovery App
 
-## MDX syntax
+A mobile app prototype designed to help travelers find destinations that match their interests. Built with a focus on clean navigation and interest-based filtering.
 
-You can use MDX to write the content of your projects. It helps you write rich and dynamic content with minimal code. Some MDX elements will be automatically transformed to Once UI components to integrate better in the design and add additional functionality.
+![Go Liboor preview](/images/uiux/go-liboor.png)
 
-## Custom components
+### 2. Inventory Management App (External)
 
-You can use custom components in MDX files, but you need to import them first in the `src/components/mdx.tsx` file.
+Designed for PT Kilang Pertamina Internasional to improve warehouse coordination. The UI/UX prototype solves inefficiencies by digitizing approvals and logistics tracking.
 
-<CodeBlock
-    marginBottom="16"
-    highlight="11-12"
-    codes={[
-      {
-        code:
-`const components = {
-    p: createParagraph as any,
-    h1: createHeading(1) as any,
-    h2: createHeading(2) as any,
-    h3: createHeading(3) as any,
-    h4: createHeading(4) as any,
-    h5: createHeading(5) as any,
-    h6: createHeading(6) as any,
-    img: createImage as any,
-    a: CustomLink as any,
-    Table,
-    CodeBlock,
-};`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
-    ]}
-/>
+![Inventory App preview](/images/uiux/inventory-pertamina.png)
 
-As you can see, the `Table` and `CodeBlock` components are already imported and available for use. You can add more by simply importing them to this file and passing them to the `components` object.
+### 3. Info Berkoh – Local Info Website
 
-## Hot reload
+A community-based web platform providing demographic data, infographics, and neighborhood news for Kelurahan Berkoh.
 
-Hot reload of MDX files is currently not supported, but we're working on it.
+![Info Berkoh preview](/images/uiux/info-berkoh.png)
+
+### 4. SoalPedia – Educational Question Bank
+
+An interface for an online question bank app that supports learning and assessment. Features a structured layout to categorize and retrieve question types easily.
+
+![SoalPedia preview](/images/uiux/soalpedia.png)
+
+### 5. Nucifero – Flower Bouquet E-Commerce
+
+A web UI project for bouquet customization and ordering. Optimized for mobile use with a clean catalog and easy checkout.
+
+![Nucifero preview](/images/uiux/nucifero.png)
+
+### 6. Flutix App – Cinema Ticket Booking
+
+Mobile app design for booking movie tickets without queueing. Includes user flow for film browsing, booking, and e-payment.
+
+![Flutix preview](/images/uiux/flutix.png)
+
+### 7. SIREK – Open Recruitment System for BEM Unsoed
+
+A web-based portal for committee recruitment with registration forms, announcements, and admin dashboard, designed using Laravel + Inertia.js + Vue.
+
+![SIREK preview](/images/uiux/sirek.jpg)
+
+### 8. Disney Website
+
+ A website dedicated to Disney movies. After selecting a specific movie, users can view its synopsis and a list of characters.
+![SIREK preview](/images/uiux/disney.jpg)
+
+---
+
+## 📱 Social Media Design Projects
+
+- **@dataatunsoed**: Visual infographics and survey promotion for BEM’s Research Department.  
+- **@soedirmantechnophoria**: Competition branding visuals – feed design, lanyards, ID cards.  
+- **@kknklumprit2025**: Daily KKN documentation, including banners, ID cards, and recap videos.
+
+---
+
+## 🧠 Skills & Tools
+
+- **UI/UX Tools**: Figma, Canva  
+- **Web Dev**: CodeIgniter, Laravel, WordPress  
+- **Soft Skills**: Communication, Time Management, Collaboration  
+- **Others**: Microsoft Office, Infographic Design, Social Media Content Creation
+
+---
+
+## 📬 Contact
+
+- 📧 mutianandhika@gmail.com  
+- 📱 +62 812-2993-8305  
+- 🧑🏻‍💻 GitHub: [MutiaNandhika](https://github.com/MutiaNandhika)  
+- 📷 Instagram: [@nanndhika](https://instagram.com/nanndhika)
+
+---
+
+© 2025 – UI/UX Portfolio by Mutia Nandhika – Universitas Jenderal Soedirman
