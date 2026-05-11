@@ -15,7 +15,7 @@ const person = {
 
 const newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: (
     <>
       I write about front-end development, UI/UX design, and my experience in building impactful
@@ -56,7 +56,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Mutia, an informatics student passionate about building intuitive digital experiences.
+      I&apos;m Mutia, an informatics student passionate about building intuitive digital experiences.
       <br /> Currently focusing on front-end development and UI/UX design using Figma, HTML, CSS,
       and JavaScript.
     </>
