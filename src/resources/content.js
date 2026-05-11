@@ -96,6 +96,16 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Duluin Group",
+        timeframe: "Feb – Mar 2025",
+        role: "Graphic Designer Intern",
+        achievements: [
+          <>Created social media content designs and content planners using Canva and Figma.</>,
+          <>Designed company profile materials and wrote copywriting for Duluin Gajian platform.</>,
+        ],
+        images: [],
+      },
+      {
         company: "PT Kilang Pertamina Internasional",
         timeframe: "Jul – Aug 2024",
         role: "UI/UX Intern",
@@ -121,7 +131,7 @@ const about = {
     institutions: [
       {
         name: "Universitas Jenderal Soedirman",
-        description: <>Studying Informatics with GPA 3.93/4.0</>,
+        description: <>Studying Informatics with GPA 3.92/4.0</>,
       },
       {
         name: "SMK Telkom Purwokerto",
